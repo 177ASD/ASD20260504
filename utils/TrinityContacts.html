@@ -25,8 +25,8 @@
 --shadow: rgba(0, 0, 0, 0.1);
 --header-text: #ffffff;
 --footer-color: rgba(255, 255, 255, 0.6);
---control-bg: #DC2626;
---control-text: #ffffff;
+--control-bg: #F5B2B2;
+--control-text: #D40809;
 }
 [data-theme="dark"] {
 --bg-gradient-start: #0B0C10;
@@ -925,7 +925,7 @@ statusHtml = `<span class="badge-status">Относится к ${c.status}</span
 }
 let controlHtml = '';
 if (c.control && c.control.trim() === 'b') {
-controlHtml = `<span class="badge-control">!Control!</span>`;
+controlHtml = `<span class="badge-control">!</span>`;
 }
 return `
 <tr>
